@@ -14,6 +14,12 @@ Plug 'vim-scripts/GreekAndEnglish'
 " File explorer
 Plug 'preservim/nerdtree'
 
+"icons and colorsheme-gruvebox
+Plug 'morhetz/gruvbox'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'ryanoasis/vim-devicons'
+
 call plug#end()
 
 " Set up nerdtree
@@ -50,3 +56,18 @@ let g:NERDTreeWinPos = "left"
 let g:NERDTreeShowHidden = 1
 let g:NERDTreeQuitOnOpen = 1
 let g:NERDTreeIgnore = ['\.aux$', '\.out$', '\.log$']
+
+" gruvbox
+syntax enable
+set background=dark
+colorscheme gruvbox
+
+" airline
+let g:airline_theme='gruvbox'
+let g:airline#extensions#tabline#enabled = 1
+
+let g:airline_powerline_fonts = 1
+let g:webdevicons_enable_nerdtree = 1
+let g:webdevicons_enable_vimfiler = 1
+let g:webdevicons_enable_ctrlp = 1
+let g:webdevicons_enable_minibufexpl = 1
